@@ -1,5 +1,4 @@
-<!-- ### Live site : https://ultimate-tripz-next.vercel.app/ -->
-<!-- ### Live site netlify : https://ultimate-tripz.netlify.app/ -->
+
 
 # Ultimate Tripz - Travel Tips & Destination Guides Platform
 
@@ -7,7 +6,7 @@ A platform for travel enthusiasts to share their travel stories, tips, and guide
 
 ## Live URL
 
-> [Ultimate Tripz](https://ultimate-tripz.netlify.app)npm 
+> 
 
 ### Credentials
 
@@ -99,7 +98,7 @@ A platform for travel enthusiasts to share their travel stories, tips, and guide
 ### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/shiningsudipto/ultimate-tripz-frontend.git
+
 ```
 
 ### Step 2: Navigate to the project folder
