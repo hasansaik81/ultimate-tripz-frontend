@@ -3,7 +3,8 @@ import { RootState } from "../store";
 const baseApi = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://ultimate-tripz-backend-main.vercel.app/",
+    baseUrl: "https://ultimate-tripz-backend-main.vercel.app/api",
+
     credentials: "include",
     prepareHeaders: (headers, { getState }) => {
       const token = (getState() as RootState).auth.token;
@@ -20,3 +21,8 @@ const baseApi = createApi({
 });
 
 export default baseApi;
+
+
+
+// "https://ultimate-tripz-backend-main-b1svl0oaq-hasans-projects-3bda48be.vercel.app/api",
+
