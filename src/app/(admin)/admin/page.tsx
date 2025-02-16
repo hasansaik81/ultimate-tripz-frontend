@@ -3,6 +3,7 @@ import CustomBarChart from "@/src/components/ui/CustomBarChart";
 import Loader from "@/src/components/ui/Loader";
 import { Suspense } from "react";
 const page = async () => {
+  // const res = await fetch("");
   const res = await fetch("https://ultimate-tripz.vercel.app/api/statistics");
   const data = await res.json();
   const statistics = data?.data;

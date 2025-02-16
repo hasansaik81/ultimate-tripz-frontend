@@ -1,18 +1,33 @@
-import { configureStore } from "@reduxjs/toolkit";
+// import { configureStore } from "@reduxjs/toolkit";
+// import {
+//   persistReducer,
+//   persistStore,
+//   FLUSH,
+//   REHYDRATE,
+//   PAUSE,
+//   PERSIST,
+//   PURGE,
+//   REGISTER,
+// } from "redux-persist";
+
 import {
-  persistReducer,
-  persistStore,
   FLUSH,
-  REHYDRATE,
   PAUSE,
   PERSIST,
+  persistReducer,
+  persistStore,
   PURGE,
   REGISTER,
+  REHYDRATE,
 } from "redux-persist";
-
-import storage from "redux-persist/lib/storage";
-import baseApi from "./api/baseApi";
+import { configureStore } from "@reduxjs/toolkit";
+import storage from "redux-persist/es/storage";
 import authSlice from "./features/auth/authSlice";
+import baseApi from "./api/baseApi";
+
+// import storage from "redux-persist/lib/storage";
+// import baseApi from "./api/baseApi";
+// import authSlice from "./features/auth/authSlice";
 
 const persistConfig = {
   key: "auth",

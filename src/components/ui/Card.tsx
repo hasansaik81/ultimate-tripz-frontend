@@ -1,11 +1,11 @@
-import { formatDateTime } from "@/src/utils/date";
 import Image from "next/image";
 import Link from "next/link";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
-import UpVote from "../module/articles/UpVote";
-import DownVote from "../module/articles/DownVote";
 import { FaRegCommentAlt } from "react-icons/fa";
+import DownVote from "../module/articles/DownVote";
+import UpVote from "../module/articles/UpVote";
 import Follow from "../actions/Follow";
+import { formatDateTime } from "@/src/utils/date";
 import { TPost } from "@/src/types";
 
 type TProps = {
