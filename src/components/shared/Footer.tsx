@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { links } from "./CustomNavbar";
 import { LiaFacebookSquare } from "react-icons/lia";
 import { IoLogoInstagram } from "react-icons/io";
 import { CiLinkedin } from "react-icons/ci";
+import { links } from "./CustomNavbar";
 
 const Footer = () => {
   return (

@@ -1,6 +1,6 @@
-import sectionImg from "@/src/assets/banner/b4.png";
 import { Button } from "@nextui-org/button";
 import Image from "next/image";
+import sectionImg from "@/src/assets/banner/b4.png";
 const Prepare = () => {
   return (
     <div className="flex lg:flex-row flex-col gap-x-16">

@@ -1,12 +1,11 @@
 import "@/src/styles/globals.css";
 import { Metadata, Viewport } from "next";
-
-import { siteConfig } from "@/src/config/site";
-import { Providers } from "../lib/Providers";
 import { Roboto } from "next/font/google";
 import clsx from "clsx";
+import { Providers } from "../lib/Providers";
 import { fontSans } from "../config/fonts";
 import DetectReload from "../components/actions/DetectReload";
+import { siteConfig } from "@/src/config/site";
 
 const roboto = Roboto({
   weight: ["400", "500", "700", "900"],

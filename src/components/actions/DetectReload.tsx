@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import { useRefreshTokenMutation } from "@/src/redux/features/auth";
 import {
   setUser,
@@ -8,7 +9,6 @@ import {
 import { useAppDispatch, useAppSelector } from "@/src/redux/hooks";
 // import { getCurrentUser } from "@/src/utils/getCurrentUser";
 import { verifyToken } from "@/src/utils/VerifyToken";
-import { useEffect } from "react";
 
 const DetectReload = () => {
   const [getRefreshTToken] = useRefreshTokenMutation();

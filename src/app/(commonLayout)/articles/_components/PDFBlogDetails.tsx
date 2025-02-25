@@ -1,11 +1,11 @@
 "use client"; // Ensure this is in a client component
-import { TPostDetails } from "@/src/types";
-import { formatDateTime } from "@/src/utils/date";
 import Image from "next/image";
 import { IoIosTimer } from "react-icons/io";
 import { LiaUserEditSolid } from "react-icons/lia";
 import { Button } from "@nextui-org/button"; // Import the Button component
 import { usePDF } from "react-to-pdf";
+import { TPostDetails } from "@/src/types";
+import { formatDateTime } from "@/src/utils/date";
 
 const PDFBlogDetails = ({ postInfo }: { postInfo: TPostDetails }) => {
   const { toPDF, targetRef } = usePDF({ filename: "page.pdf" });

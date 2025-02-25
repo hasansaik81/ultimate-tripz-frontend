@@ -1,10 +1,10 @@
 "use client";
+import { Button } from "@nextui-org/button";
+import { toast } from "sonner";
 import { TUser, useCurrentUser } from "@/src/redux/features/auth/authSlice";
 import { useFollowMutation } from "@/src/redux/features/follow";
 import { useAppSelector } from "@/src/redux/hooks";
 import { TErrorResponse, TPostAuthor } from "@/src/types";
-import { Button } from "@nextui-org/button";
-import { toast } from "sonner";
 
 type TProps = {
   author: TPostAuthor;

@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
+import Blogs from "./_components/Blogs";
 import Filter from "@/src/components/module/articles/Filter";
 import Sidebar from "@/src/components/module/articles/Sidebar";
 import CreatePost from "@/src/components/module/articles/create-post/CreatePost";
-import Blogs from "./_components/Blogs";
 import ErrorBoundary from "@/src/components/ErrorBoundary";
 import SidebarLoading from "@/src/components/loading/SidebarLoading";
 import Loader from "@/src/components/ui/Loader";

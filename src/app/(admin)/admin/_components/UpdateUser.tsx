@@ -1,12 +1,12 @@
 "use client";
-import Dropdown from "@/src/components/formik/Dropdown";
-import CustomModal from "@/src/components/ui/CustomModal";
-import { useUpdateUserRoleMutation } from "@/src/redux/features/user";
-import { TErrorResponse } from "@/src/types";
 import { Button } from "@nextui-org/button";
 import { Form, Formik } from "formik";
 import { useState } from "react";
 import { toast } from "sonner";
+import Dropdown from "@/src/components/formik/Dropdown";
+import CustomModal from "@/src/components/ui/CustomModal";
+import { useUpdateUserRoleMutation } from "@/src/redux/features/user";
+import { TErrorResponse } from "@/src/types";
 
 const statusOptions = [
   {

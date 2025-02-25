@@ -1,10 +1,10 @@
 "use client";
+import { FaAnglesUp } from "react-icons/fa6";
+import { toast } from "sonner";
 import { TUser, useCurrentUser } from "@/src/redux/features/auth/authSlice";
 import { useUpvoteMutation } from "@/src/redux/features/vote";
 import { useAppSelector } from "@/src/redux/hooks";
 import { TErrorResponse } from "@/src/types";
-import { FaAnglesUp } from "react-icons/fa6";
-import { toast } from "sonner";
 export type TVoteProps = {
   votes: string[];
   id: string;

@@ -1,11 +1,11 @@
 "use client";
-import { TErrorResponse, TPostDetails } from "@/src/types";
 import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 import UpdateBlog from "./UpdateBlog";
+import { TErrorResponse, TPostDetails } from "@/src/types";
 import { useGetPostsQuery } from "@/src/redux/features/admin";
 import { logout } from "@/src/redux/features/auth/authSlice";
 import { useAppDispatch } from "@/src/redux/hooks";
-import { useRouter } from "next/navigation";
 
 const BlogsData = () => {
   const { data, error } = useGetPostsQuery("");

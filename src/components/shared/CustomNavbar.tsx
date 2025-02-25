@@ -1,11 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import {
-  logout,
-  TUser,
-  useCurrentUser,
-} from "@/src/redux/features/auth/authSlice";
-import { useAppDispatch, useAppSelector } from "@/src/redux/hooks";
 import { Link } from "@nextui-org/link";
 import {
   Navbar,
@@ -18,6 +12,12 @@ import {
 } from "@nextui-org/navbar";
 import { Button } from "@nextui-org/button";
 import { ThemeSwitch } from "../theme-switch";
+import {
+  logout,
+  TUser,
+  useCurrentUser,
+} from "@/src/redux/features/auth/authSlice";
+import { useAppDispatch, useAppSelector } from "@/src/redux/hooks";
 
 export const links = [
   {

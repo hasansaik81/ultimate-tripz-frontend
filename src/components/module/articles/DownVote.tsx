@@ -1,6 +1,6 @@
 import { FaAnglesDown } from "react-icons/fa6";
-import { TVoteProps } from "./UpVote";
 import { toast } from "sonner";
+import { TVoteProps } from "./UpVote";
 import { TErrorResponse } from "@/src/types";
 import { useDownvoteMutation } from "@/src/redux/features/vote";
 import { useAppSelector } from "@/src/redux/hooks";

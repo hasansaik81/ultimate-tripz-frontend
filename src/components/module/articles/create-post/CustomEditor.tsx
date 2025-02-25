@@ -1,8 +1,8 @@
 "use client";
+// eslint-disable-next-line import/order
 import Dropdown from "@/src/components/formik/Dropdown";
+// eslint-disable-next-line import/order
 import FormikInput from "@/src/components/formik/FormikInput";
-import { useCreatePostMutation } from "@/src/redux/features/post";
-import { TErrorResponse } from "@/src/types";
 import * as Yup from "yup";
 import { Button } from "@nextui-org/button";
 import { ErrorMessage, Form, Formik } from "formik";
@@ -10,6 +10,8 @@ import dynamic from "next/dynamic";
 import { useState } from "react";
 import "react-quill/dist/quill.snow.css";
 import { toast } from "sonner";
+import { useCreatePostMutation } from "@/src/redux/features/post";
+import { TErrorResponse } from "@/src/types";
 import { useAppSelector } from "@/src/redux/hooks";
 import { TUser, useCurrentUser } from "@/src/redux/features/auth/authSlice";
 

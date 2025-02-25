@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import EditProfile from "./EditProfile";
-import { TErrorResponse, TUserDetails } from "@/src/types";
 import { useState } from "react";
-import CustomModal from "@/src/components/ui/CustomModal";
 import { Form, Formik } from "formik";
 import { Button } from "@nextui-org/button";
 import { toast } from "sonner";
+import EditProfile from "./EditProfile";
+import { TErrorResponse, TUserDetails } from "@/src/types";
+import CustomModal from "@/src/components/ui/CustomModal";
 import { useUpdateUserInfoMutation } from "@/src/redux/features/user";
 import { TUser, useCurrentUser } from "@/src/redux/features/auth/authSlice";
 import { useAppSelector } from "@/src/redux/hooks";

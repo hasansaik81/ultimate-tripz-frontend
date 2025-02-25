@@ -1,11 +1,11 @@
 "use client";
-import FormikInput from "@/src/components/formik/FormikInput";
-import { useRecoverPasswordMutation } from "@/src/redux/features/auth";
-import { TErrorResponse } from "@/src/types";
 import { Button } from "@nextui-org/button";
 import { Form, Formik } from "formik";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
+import FormikInput from "@/src/components/formik/FormikInput";
+import { useRecoverPasswordMutation } from "@/src/redux/features/auth";
+import { TErrorResponse } from "@/src/types";
 
 type TFormValues = {
   email: string;

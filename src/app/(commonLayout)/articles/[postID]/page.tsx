@@ -1,4 +1,14 @@
 "use client";
+import { toast } from "sonner";
+import Image from "next/image";
+import Link from "next/link";
+import { FaRegCommentAlt } from "react-icons/fa";
+import { Form, Formik } from "formik";
+import { Button } from "@nextui-org/button";
+import { FiEdit3 } from "react-icons/fi";
+import { MdDeleteOutline } from "react-icons/md";
+import { Suspense, useState } from "react";
+import PDFBlogDetails from "../_components/PDFBlogDetails";
 import DownVote from "@/src/components/module/articles/DownVote";
 import UpVote from "@/src/components/module/articles/UpVote";
 import {
@@ -10,24 +20,12 @@ import {
 import { useGetPostDetailsQuery } from "@/src/redux/features/post";
 import { TComment, TErrorResponse, TPostDetails } from "@/src/types";
 import { formatDateTime } from "@/src/utils/date";
-import Image from "next/image";
-import Link from "next/link";
-import { FaRegCommentAlt } from "react-icons/fa";
-import { LiaUserEditSolid } from "react-icons/lia";
-import { IoIosTimer } from "react-icons/io";
-import { Form, Formik } from "formik";
 import Textarea from "@/src/components/formik/Textarea";
-import { Button } from "@nextui-org/button";
 import { useAppSelector } from "@/src/redux/hooks";
 import { TUser, useCurrentUser } from "@/src/redux/features/auth/authSlice";
-import { FiEdit3 } from "react-icons/fi";
-import { MdDeleteOutline } from "react-icons/md";
-import { Suspense, useState } from "react";
 import CustomModal from "@/src/components/ui/CustomModal";
-import PDFBlogDetails from "../_components/PDFBlogDetails";
 import ErrorBoundary from "@/src/components/ErrorBoundary";
 import BlogDetailsLoading from "@/src/components/loading/BlogDetailsLoading";
-import { toast } from "sonner";
 
 type TPostComment = {
   feedback: string;

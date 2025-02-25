@@ -1,10 +1,10 @@
 "use client";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 import { useAppDispatch } from "@/src/redux/hooks";
 import { logout } from "@/src/redux/features/auth/authSlice";
 import { TErrorResponse } from "@/src/types";
-import { toast } from "sonner";
 
 interface ErrorHandlerProps {
   error: TErrorResponse | null;

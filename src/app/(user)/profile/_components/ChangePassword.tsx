@@ -1,9 +1,9 @@
-import FormikInput from "@/src/components/formik/FormikInput";
-import { useChangePasswordMutation } from "@/src/redux/features/auth";
-import { TErrorResponse } from "@/src/types";
 import { Button } from "@nextui-org/button";
 import { Form, Formik } from "formik";
 import { toast } from "sonner";
+import FormikInput from "@/src/components/formik/FormikInput";
+import { useChangePasswordMutation } from "@/src/redux/features/auth";
+import { TErrorResponse } from "@/src/types";
 const ChangePassword = () => {
   const [changePass] = useChangePasswordMutation();
   const handleSubmit = async (values: { password: string }) => {

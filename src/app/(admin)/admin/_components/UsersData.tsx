@@ -1,12 +1,12 @@
 "use client";
+import { toast } from "sonner";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import UpdateUser from "./UpdateUser";
 import { useGetUsersQuery } from "@/src/redux/features/admin";
 import { TErrorResponse, TUserDetails } from "@/src/types";
-import Image from "next/image";
-import { toast } from "sonner";
-import UpdateUser from "./UpdateUser";
 import { useAppDispatch } from "@/src/redux/hooks";
 import { logout } from "@/src/redux/features/auth/authSlice";
-import { useRouter } from "next/navigation";
 
 const UsersData = () => {
   const dispatch = useAppDispatch();

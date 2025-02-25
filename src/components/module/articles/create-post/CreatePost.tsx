@@ -1,11 +1,11 @@
 "use client";
+import Image from "next/image";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import CustomEditor from "./CustomEditor";
 import { TUser, useCurrentUser } from "@/src/redux/features/auth/authSlice";
 import { useAppSelector } from "@/src/redux/hooks";
-import Image from "next/image";
-import CustomEditor from "./CustomEditor";
-import { useState, useEffect } from "react";
 import CustomModal from "@/src/components/ui/CustomModal";
-import Link from "next/link";
 
 const CreatePost = () => {
   const user = useAppSelector(useCurrentUser) as TUser;
@@ -42,22 +42,22 @@ const CreatePost = () => {
               />
             </Link>
             <input
-              onClick={() => setIsEditorModalOpen(true)}
               type="text"
               className="rounded-full w-full h-[60px] border px-5"
               placeholder="Share your thoughts...!"
+              onClick={() => setIsEditorModalOpen(true)}
             />
           </div>
           <CustomModal
             isOpen={isEditorModalOpen}
-            onClose={() => setIsEditorModalOpen(false)}
             footer={false}
             title="Editor"
             size="5xl"
+            onClose={() => setIsEditorModalOpen(false)}
           >
             <CustomEditor
-              onClose={() => setIsEditorModalOpen(false)}
               authorId={user?.id}
+              onClose={() => setIsEditorModalOpen(false)}
             />
           </CustomModal>
         </div>

@@ -1,14 +1,14 @@
 "use client";
+import Link from "next/link";
+import { FaAnglesUp } from "react-icons/fa6";
+import { LiaUserEditSolid } from "react-icons/lia";
+import { useEffect, useState } from "react";
+import Subscribe from "../../actions/Subscribe";
+import SidebarLoading from "../../loading/SidebarLoading";
 import { TUser, useCurrentUser } from "@/src/redux/features/auth/authSlice";
 import { useGetPopularPostsQuery } from "@/src/redux/features/post";
 import { useAppSelector } from "@/src/redux/hooks";
 import { TPopularPost } from "@/src/types";
-import Link from "next/link";
-import { FaAnglesUp } from "react-icons/fa6";
-import { LiaUserEditSolid } from "react-icons/lia";
-import Subscribe from "../../actions/Subscribe";
-import { useEffect, useState } from "react";
-import SidebarLoading from "../../loading/SidebarLoading";
 
 const Sidebar = () => {
   const { data, isLoading } = useGetPopularPostsQuery("");

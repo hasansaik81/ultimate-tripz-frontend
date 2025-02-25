@@ -1,11 +1,11 @@
 "use client";
+import { ReactNode } from "react";
+import { toast } from "sonner";
 import { TUser, useCurrentUser } from "@/src/redux/features/auth/authSlice";
 import { useGetPostByAuthorQuery } from "@/src/redux/features/post";
 import { useSubscribeMutation } from "@/src/redux/features/user";
 import { useAppSelector } from "@/src/redux/hooks";
 import { TErrorResponse, TPost } from "@/src/types";
-import { ReactNode } from "react";
-import { toast } from "sonner";
 
 const Subscribe = ({
   title,
